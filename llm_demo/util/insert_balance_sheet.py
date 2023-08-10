@@ -93,7 +93,7 @@ def read_excel_and_process():
 
 def write_to_database(df):
     df.to_sql(TABLE_NAME, engine, schema=SCHEMA_NAME, if_exists='append', index=False)
-    logger.info("Data successfully written to the database!")
+    print("Data successfully written to the database!")
 
 def main():
     try:
